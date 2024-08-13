@@ -53,6 +53,48 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+
+            <tr onmouseout="soccer_stop()" onmouseover="soccer_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='soccer_image'>
+                    <img src='images/soccerball.png' width="160"></div>
+                  <img src='images/soccerball.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function soccer_start() {
+                    document.getElementById('soccer_image').style.opacity = "1";
+                  }
+
+                  function soccer_stop() {
+                    document.getElementById('soccer_image').style.opacity = "0";
+                  }
+                  soccer_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2407.14558">
+                  <span class="papertitle">A Foundation Model for Soccer</span>
+                </a>
+                <br>
+                <a href="https://www.linkedin.com/in/baron-ethan/">Ethan Baron*</a>,
+                <a href="https://www.linkedin.com/in/danielhocevar/">Daniel Hocevar*</a>,
+                <strong>Zach Salehe*</strong>
+                <br>
+                <em>arXiv</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2407.14558">arXiv</a>
+                /
+                <a href="https://github.com/danielhocevar/Foundation-Model-for-Soccer">code</a>
+                <p></p>
+                <p>
+                We use a transformer decoder architecture to develop a foundation model for soccer actions, capable of predicting the next action following from a given input sequence.
+                </p>
+              </td>
+            </tr>
+
+
             
             <tr onmouseout="t6_stop()" onmouseover="t6_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -84,6 +126,8 @@
                 <a href="http://www.cs.toronto.edu/~kyros/">Kiriakos N. Kutulakos</a>
                 <br>
                 2023
+                <br>
+                <a href="https://github.com/zachsalehe/t6_simulation">code</a>
                 <p></p>
                 <p>
                 We provide a simulation pipeline in order to accurately model the T6, a next-generation computational camera developed by the University of Toronto.
@@ -100,7 +144,7 @@
                 <br>
                 <p style="text-align:right;font-size:small;">
                   Template stolen from <a href="https://jonbarron.info/">Jon Barron</a>. <br>
-                  Last updated April 2024.
+                  Last updated August 2024.
                 </p>
               </td>
             </tr>
